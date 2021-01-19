@@ -738,6 +738,7 @@ rangy.createModule("ClassApplier", ["WrappedSelection"], function(api, module) {
             // Apply the merges
             if (merges.length) {
                 log.info("Merging. Merges:", merges);
+                var len = 0;
                 for (var i = 0, len = merges.length; i < len; ++i) {
                     merges[i].doMerge(positionsToPreserve);
                 }
